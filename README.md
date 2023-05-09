@@ -35,7 +35,10 @@ my-packer-build/
 ## How can you use these layers? 
 There are a few ways to use these layers while building an image. The perfered method would be to use packer and just include the layers in your build argument. 
 
-### Alterative option (Custom tools)
+### Packer THE EASY WAY
+TODO...
+
+### Alterative option (Custom tools) THE HARD WAY
 Steps:
 1. Packages
 2. Configs
