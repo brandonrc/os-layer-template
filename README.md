@@ -21,15 +21,17 @@ my-packer-build/
 │   │   └── custom-executable.conf       services required for this "layer"
 │   └── usr/local/bin
 │       └── sylink-to-something
-├── package-lists/   <-------------------Folder that contains lists for redhat
-│   ├── rpm-requirments.txt              and debian backages based on the flavor
-│   ├── dpm-requirments.txt              of linux. 
-│   └── pip-requirments.txt  <-----------We also will include pip for the 
+├── packages/   <------------------------Folder that contains lists for redhat
+│   ├── rpms.txt                         and debian backages based on the flavor
+│   ├── dpms.txt                         of linux. 
+│   └── python.txt  <--------------------We also will include pip for the 
 |                                        system python
-└── scripts/
-    ├── 01-first-script-to-run.sh  <-----Scripts are run in ABC order.  
-    └── 02-second-script-to-run.sh       If you number them you can control
-                                         the order of the scripts
+├── scripts/
+|   ├── 01-first-script-to-run.sh  <-----Scripts are run in ABC order.  
+|   └── 02-second-script-to-run.sh       If you number them you can control
+|                                        the order of the scripts
+├── envionrment <------------------------Env variables added to the /etc/environment file
+└── layer-dependencies <-----------------Any layers that are required to run this layer
 ```
 
 ## How can you use these layers? 
